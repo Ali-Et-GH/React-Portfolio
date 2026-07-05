@@ -1,0 +1,52 @@
+:root {
+  --color-surface: #f9f9f7;
+  --color-bg: #edece7;
+  --color-primary: #b08900;
+  --color-primary-hover: #a47e02;
+
+  --color-text: #1a1a1a;
+  --color-text-muted: #6b6b6b;
+  --color-text-on-primary: #ffffff;
+  --color-text-hover: #31280b;
+
+  --color-border: #d6ceb6;
+  --color-border-focus: #aba287;
+  --color-border-muted: #f2efe7;
+  --color-input-bg: #f3f1ea;
+
+  --color-danger: #b91c1c;
+  --color-success: #15803d;
+
+  --color-star-background: #ccc;
+  --color-star-foreground: gold;
+
+  --color-cart: rgb(2, 69, 213);
+
+  --color-nav-hover: rgba(0, 66, 199, 1);
+
+  --color-shadow: rgba(0,0,0,0.05);
+}
+
+.dark {
+  --color-surface: #0e0e0e;
+  --color-bg: #1a1a1a;
+  --color-primary: #9b7d06;
+  --color-primary-hover: #bb9110;
+
+  --color-text: #dadada;
+  --color-text-muted: #a3a1a1;
+  --color-text-on-primary: #1a1a1a;
+
+  --color-border: #37311b;
+  --color-border-focus: #3c3c3c;
+  --color-border-muted: #1f1f1f;
+  --color-input-bg: #141414;
+
+  --color-danger: #f87171;
+  --color-success: #4ade80;
+
+  --color-star-background: #939393;
+  --color-star-foreground: rgb(205, 174, 0);
+
+  --color-shadow: rgba(0,0,0,0.5);
+}

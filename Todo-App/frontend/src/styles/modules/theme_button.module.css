@@ -1,0 +1,26 @@
+.theme_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 5rem;
+    height: 5rem;
+
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+
+    color: var(--color-text);
+    font-size: 2.5rem;
+
+    border-radius: 50%;
+    background-color: var(--color-surface);
+    box-shadow: 0 0 15px 1px var(--color-shadow);
+    border: none;
+    transition: color 0.2s;
+}
+
+.theme_button:hover{
+    cursor: pointer;
+    color: var(--color-primary-hover);
+}

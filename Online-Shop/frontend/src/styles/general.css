@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html, body, #root{
+    height: 100%;
+    width: 100%;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body{
+    display: grid;
+    grid-template-rows: 12rem 1fr 6rem;
+    background-color: var(--color-bg);
+}
+
+#root{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
