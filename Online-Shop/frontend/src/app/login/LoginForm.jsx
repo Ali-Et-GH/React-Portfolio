@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { FaRegSquare, FaRegCheckSquare } from 'react-icons/fa'
 import { useDispatch, useSelector } from "react-redux";
 import { login } from "@/redux/actions/user";
-import LoadingCircle from "../components/animations/LoadingCircle";
+import LoadingCircle from "../../components/animations/LoadingCircle";
 
 
 export default function LoginForm({styles}) {

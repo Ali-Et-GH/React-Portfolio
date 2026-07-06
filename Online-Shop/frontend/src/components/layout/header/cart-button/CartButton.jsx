@@ -5,8 +5,9 @@ import { useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import { FaShoppingCart } from "react-icons/fa";
 import { useSelector } from "react-redux";
+import styles from './cart_button.module.css'
 
-export default function CartButton({styles}) {
+export default function CartButton() {
   
   const cart = useSelector(state => state.auth.user?.cart) || [];
   const quantity = cart.length;

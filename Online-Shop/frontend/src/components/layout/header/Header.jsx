@@ -2,10 +2,10 @@ import React from 'react'
 import { cookies } from 'next/headers'
 import { FaShoppingBag, FaSearch } from 'react-icons/fa'
 import styles from './header.module.css'
-import ThemeButton from './ThemeButton'
-import CategoryNav from '@/app/layout/header/CategoryNav'
-import LoginButton from './LoginButton'
-import CartButton from './CartButton'
+import ThemeButton from './theme-button/ThemeButton'
+import CategoryNav from '@/components/layout/header/category-nav/CategoryNav'
+import LoginButton from './login-button/LoginButton'
+import CartButton from './cart-button/CartButton'
 
 export default async function Header() {
   const cookieStore = await cookies()
@@ -19,7 +19,7 @@ export default async function Header() {
 
   return (
     <header className={styles.header}>
-      <div className={styles.header_contents_container}>
+      <div className={styles.contents_container}>
         <div className={styles.logo_and_search}>
           <div className={styles.logo}>
             <span className={styles.icon}>
@@ -42,9 +42,9 @@ export default async function Header() {
         </div>
 
         <div className={styles.login_and_cart}>
-          <LoginButton styles={styles}/>
+          <LoginButton/>
 
-          <CartButton styles={styles}/>
+          <CartButton/>
 
           <ThemeButton styles={styles}/>
         </div>

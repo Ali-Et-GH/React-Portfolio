@@ -1,5 +1,5 @@
-import Header from '@/app/layout/header/Header';
-import Footer from '@/app/layout/footer/Footer';
+import Header from '@/components/layout/header/Header';
+import Footer from '@/components/layout/footer/Footer';
 import { setReturnUrl } from '@/hooks/useReturnUrlParam';
 
 

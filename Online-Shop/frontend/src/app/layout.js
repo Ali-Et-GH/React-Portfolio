@@ -4,10 +4,10 @@ import '@/styles/general.css';
 
 import { cookies } from 'next/headers';
 
-import ReduxProvider from './components/providers/ReduxProvider';
-import ThemeProvider from './components/providers/ThemeProvider';
-import CartProvider from './components/providers/CartProvider';
-import LoginRedirect from './components/navigation/LoginRedirect';
+import ReduxProvider from '../components/providers/ReduxProvider';
+import ThemeProvider from '../components/providers/ThemeProvider';
+import CartProvider from '../components/providers/CartProvider';
+import LoginRedirect from '../components/navigation/LoginRedirect';
 
 export default async function RootLayout({ children }) {
   const cookieStore = await cookies();

@@ -34,7 +34,7 @@ export default function ProductCard({product, styles}) {
 
   return (
     <div key={product.id} className={styles.product_card}>
-      <div className={styles.product_image_container}>
+      <div className={styles.image_container}>
         <Image
           src={product.thumbnail}
           alt="image loading failed"
@@ -43,7 +43,7 @@ export default function ProductCard({product, styles}) {
           sizes="27rem"
         />
       </div>
-      <div className={styles.product_info_container}>
+      <div className={styles.info_container}>
         <div className={styles.rating_and_price}>
           <div className={styles.rating}>
             <div className={styles.star}>
@@ -59,11 +59,11 @@ export default function ProductCard({product, styles}) {
           </div>
           <span className={styles.price}>{product.price} $</span>
         </div>
-        <div className={styles.product_info}>
+        <div className={styles.info}>
           <p className={styles.title}>{product.title}</p>
           <p className={styles.description}>{product.description}</p>
         </div>
-        <div className={styles.buttons}>
+        <div className={styles.buttons_container}>
           {
             !openQuickAdd ? (
               <>

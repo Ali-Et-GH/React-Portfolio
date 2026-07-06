@@ -1,14 +1,16 @@
-.loginPageWrapper {
+.login_page_wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+
+    min-height: 100vh;
+    width: 100%;
+    
     background-color: var(--color-bg);
 }
 
@@ -16,8 +18,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
     width: 50rem;
     height: 40rem;
+
     background-color: var(--color-surface);
     border-radius: 1rem;
     border: 1px solid var(--color-border);
@@ -29,17 +33,20 @@
     justify-content: center;
     align-items: center;
     position: relative;
+
     height: 12rem;
     width: 100%;
+
     background-color: var(--color-primary);
     border-radius: 1rem 1rem 0 0;
 }
 
 .title {
-    font-size: 4rem;
-    color: var(--color-text-on-primary);
     display: flex;
     align-items: center;
+
+    font-size: 4rem;
+    color: var(--color-text-on-primary);
 }
 
 .title h2 {
@@ -52,11 +59,12 @@
     border: none;
     display: flex;
     align-items: center;
-    color: var(--color-text-on-primary);
-    font-size: 3rem;
     position: absolute;
     left: 1rem;
     top: 1rem;
+
+    color: var(--color-text-on-primary);
+    font-size: 3rem;
     transition: opacity 0.2s ease;
 }
 
@@ -72,26 +80,29 @@
 }
 
 .login_form {
-    height: 28rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+
+    height: 28rem;
     width: 100%;
     padding: 2rem;
-    justify-content: space-between;
 }
 
 .login_form input[type='text'],
 .login_form input[type='password'],
 .login_form input[type='email'] {
     height: 6rem;
-    font-size: 1.5rem;
     width: 100%;
-    border: 1px solid var(--color-border);
     padding-left: 1rem;
-    border-radius: 1rem;
+    
+    font-size: 1.5rem;
     color: var(--color-text);
+
+    border-radius: 1rem;
     background-color: var(--color-input-bg);
+    border: 1px solid var(--color-border);
     transition: border-color 0.2s ease;
 }
 
@@ -112,16 +123,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     width: 80%;
     height: 5rem;
-    border-radius: 1rem;
+
     font-size: 2rem;
-    /* background-color: var(--color-primary);
-    color: var(--color-text-on-primary); */
     color: var(--color-primary);
+
+    border-radius: 1rem;
     border: 2px solid var(--color-primary);
     background: none;
-    /* border: none; */
     transition: background-color 0.2s ease;
 }
 
@@ -131,10 +142,12 @@
 }
 
 .login_form label {
-    width: 23%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+    width: 23%;
+
     color: var(--color-text-muted);
     font-size: 1.2rem;
 }

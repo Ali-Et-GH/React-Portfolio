@@ -3,8 +3,9 @@
 import { FaMoon, FaSun } from 'react-icons/fa';
 import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
+import styles from './theme_button.module.css'
 
-export default function ThemeButton({styles}) {
+export default function ThemeButton() {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
 

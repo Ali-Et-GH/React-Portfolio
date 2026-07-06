@@ -26,7 +26,7 @@ export default function Login() {
 
 
   return (
-    <div className={styles.loginPageWrapper}>
+    <div className={styles.login_page_wrapper}>
       <div className={styles.login_container}>
         <div className={styles.header}>
           <button onClick={handleReturn} className={styles.back}>

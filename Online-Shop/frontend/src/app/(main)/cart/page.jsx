@@ -9,7 +9,7 @@ import CartItemCard from './CartItemCard';
 export default function Cart() {
   const user = useRequireLogin();
   const cartItems = user?.cart ?? [];
-  const empty = cartItems == [];
+  const empty = cartItems.length === 0;
   const { totalPrice, totalQuantity } = useMemo(() => {
     return cartItems.reduce(
       (res, item) => {
@@ -32,15 +32,15 @@ export default function Cart() {
     <div className={styles.cart_container}>
       <div className={styles.cart_summary}>
         <div className={styles.cart_info}>
-          <h2>Cart Summary</h2>
+          <h2 className={styles.title}>Cart Summary</h2>
 
-          <p>Total Items: <span>{totalQuantity}</span></p>
-          <p>Total Price: <span>${totalPrice.toFixed(2)}</span></p>
+          <p className={styles.total_items}>Total Items: <span>{totalQuantity}</span></p>
+          <p className={styles.total_price}>Total Price: <span>${totalPrice.toFixed(2)}</span></p>
         </div>
-        <button> Confirm Purchase </button>
+        <button className={styles.confirm}> Confirm Purchase </button>
       </div>
 
-      <div className={`${styles.cart_items} ${empty ? 'empty' : ''}`}>
+      <div className={`${styles.cart_items} ${empty ? styles.empty : ''}`}>
         {empty ? (
           <p className={styles.empty_message}>Your cart is empty.</p>
         ) : (

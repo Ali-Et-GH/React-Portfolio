@@ -6,8 +6,9 @@ import { MdLogin, MdLogout } from "react-icons/md";
 import { useDispatch, useSelector } from "react-redux";
 import useReturnUrlParam from "@/hooks/useReturnUrlParam";
 import { logout } from "@/redux/actions/user";
+import styles from './login_button.module.css'
 
-export default function LoginButton({styles}) {
+export default function LoginButton() {
 
   const dispatch = useDispatch();
   const user = useSelector(state => state.auth.user);
